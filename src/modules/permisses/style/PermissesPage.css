@@ -1,0 +1,100 @@
+.container-grid-permisses {
+  display: grid;
+  grid-template-areas:
+    "sectionHeaderPermissionPage"
+    "sectionTable";
+  grid-template-rows: auto 1fr;
+
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  min-height: 0;
+}
+
+.sectionHeaderPermissionPage {
+  grid-area: sectionHeaderPermissionPage;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  /* background: blue !important; */
+  /* color: brown; */
+}
+.sectionTable {
+  grid-area: sectionTable;
+  height: 100%;
+}
+
+.permissions-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  padding: 0 0.75rem 1rem;
+}
+
+.permissions-grid {
+  display: grid;
+  grid-template-areas:
+    "sectionHeaderPermissions"
+    "sectionPermissionsTable";
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  max-width: 980px;
+  gap: 1rem;
+}
+
+.permissions-header {
+  grid-area: sectionHeaderPermissions;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.permissions-title-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.permissions-title-article h1 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  line-height: 1.08;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.permissions-title-article p {
+  margin: 0;
+  color: #4a5565;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.permissions-table {
+  grid-area: sectionPermissionsTable;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.permissions-card {
+  border-color: rgba(198, 206, 219, 0.72);
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.04);
+}
+
+@media (max-width: 760px) {
+  .permissions-grid {
+    width: 100%;
+  }
+
+  .permissions-header button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+.tool-grid {
+  display: grid;
+  grid-template-areas:
+    "sectionHeaderToolPage"
+    "addToolSection"
+    "sectionToolTable";
+  grid-template-rows: auto auto;
+  
+  width: 100%;
+}
+
+.tool-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 0.75rem 1rem;
+}
+
+.tool-header {
+  grid-area: sectionHeaderToolPage;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tool-title-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tool-title-article h1 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 2.15rem;
+  font-weight: 700;
+  line-height: 1.04;
+  color: #112031;
+}
+
+.tool-title-article p {
+  margin: 0;
+  max-width: 640px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #526273;
+}
+
+.tool-table {
+  display: flex;
+  flex-direction: column;
+  grid-area: sectionToolTable;
+  gap: 30px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .tool-container {
+    padding: 0 0.75rem 0.95rem;
+  }
+
+  .tool-grid {
+    width: 100%;
+  }
+
+  .tool-title-article h1 {
+    font-size: 1.85rem;
+  }
+
+  .tool-title-article p {
+    font-size: 0.92rem;
+  }
+
+}

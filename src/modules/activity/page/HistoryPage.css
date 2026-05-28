@@ -1,0 +1,105 @@
+.history-grid {
+    display: grid;
+    grid-template-areas:
+        "sectionHistoryHeader sectionHistoryHeader"
+        "sectionHistory sectionHistory"
+        "sectionHistoryFooter sectionHistoryFooter";
+    width: min(700px, 100%);
+    max-width: 100%;
+    min-width: 0;
+    gap: 0.75rem;
+}
+
+.history-header {
+    grid-area: sectionHistoryHeader;
+}
+
+.history-header .article {
+    margin-bottom: 1.22rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.history-header .article>p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a5565;
+}
+
+.history-section {
+    grid-area: sectionHistory;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    gap: 0.875rem;
+}
+
+.history-filters-card {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.history-filters-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.history-filters-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-footer {
+    grid-area: sectionHistoryFooter;
+}
+
+.history-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+}
+
+.history-feedback {
+    text-align: center;
+    color: #4a5565;
+    font-size: 0.95rem;
+}
+
+@media screen and (max-width: 760px) {
+    .history-container {
+        padding: 0 0.75rem 1rem;
+    }
+
+    .history-grid {
+        width: 100%;
+        gap: 0.9rem;
+    }
+
+    .history-header .article {
+        margin-bottom: 0.4rem;
+    }
+
+    .history-filters-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.7rem;
+    }
+
+    .history-filters-card {
+        position: static;
+        top: auto;
+        z-index: auto;
+    }
+
+    .history-filters-wrap {
+        width: 100%;
+    }
+}

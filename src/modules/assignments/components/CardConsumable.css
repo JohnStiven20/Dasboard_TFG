@@ -1,0 +1,78 @@
+.cardConsumable {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 16px;
+  background-color: #f3fcf6;
+  border: 1px solid #c6f0d0;
+  border-radius: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.cardConsumable-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-qty {
+  background-color: #f2f2f2;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}
+
+.card-delete-btn {
+  background: none;
+  border: none;
+  color: #e11d48; /* rojo */
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.card-delete-btn:hover {
+  color: #b91c1c; /* rojo más oscuro */
+}
+
+.card-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.subCardConsumable {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.centrar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}

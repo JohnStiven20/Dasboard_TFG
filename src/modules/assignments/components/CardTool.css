@@ -1,0 +1,43 @@
+.cardTool {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 16px;
+  background-color: #f3f8ff;
+  border: 1px solid #cfd9ff;
+  border-radius: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.cardTool-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+.subCardTool {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 16px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}

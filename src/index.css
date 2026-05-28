@@ -1,0 +1,65 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===== Reset global ===== */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Variables ===== */
+:root {
+  --body-color: #F9FAFB;
+  --sidebar-color: #fff;
+  --primary-color: #203592;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #000000;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+
+  /* ====== Colors Inventario ====== */
+  --background-color: #f9fafb;
+  --background-color-card: #ffffff;
+  --font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --background-color-button: #000000;
+  --text-color-button: #ffffff;
+  --background-color-textfield: #f3f3f5;
+  --border-color-textfield: #d1d5db;
+
+  --title-color: #0f172a;
+  --title-accent: #3b82f6;
+}
+
+/* ===== Dark Mode Variables ===== */
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+}
+
+.top-margin {
+  margin-top: 20px;
+}
+
+.right-flex {
+  align-self: flex-end;
+}
+
+/* Fix for MUI DataGrid IconButton stretching in Headers and Portals (Filter Panel) */
+.MuiDataGrid-columnHeader .MuiIconButton-root,
+.MuiDataGrid-filterForm .MuiIconButton-root,
+.MuiDataGrid-panel .MuiIconButton-root
+  {
+  /* width: auto !important; */
+  height: auto !important;
+  min-width: unset !important;
+  border-radius: 50% !important;
+}

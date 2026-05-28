@@ -1,0 +1,17 @@
+.cardToolExtend {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 9px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f3f8ff;
+    border: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+}
